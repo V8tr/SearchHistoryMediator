@@ -10,6 +10,7 @@ import UIKit
 
 protocol HistoryRepository {
 	var history: [String] { get }
+    func addSearchTerm(_ term: String)
 }
 
 protocol HistoryView: class {
@@ -55,6 +56,9 @@ extension SearchHistoryMediator: UISearchBarDelegate {
 
 	func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
 		historyView.isHidden = true
+        if let text = searchBar.text, !text.isEmpty {
+            historyRepository.addSearchTerm(text)
+        }
 	}
 
 	func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
