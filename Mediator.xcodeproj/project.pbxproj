@@ -13,6 +13,7 @@
 		D7C9ABC0201F3B4400E1546C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7C9ABBF201F3B4400E1546C /* Assets.xcassets */; };
 		D7C9ABC3201F3B4400E1546C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7C9ABC1201F3B4400E1546C /* LaunchScreen.storyboard */; };
 		D7C9ABCE201F3B4500E1546C /* MediatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9ABCD201F3B4500E1546C /* MediatorTests.swift */; };
+		D7C9ABD9201F3BD300E1546C /* SearchHistoryMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9ABD8201F3BD300E1546C /* SearchHistoryMediator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		D7C9ABC9201F3B4500E1546C /* MediatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7C9ABCD201F3B4500E1546C /* MediatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatorTests.swift; sourceTree = "<group>"; };
 		D7C9ABCF201F3B4500E1546C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7C9ABD8201F3BD300E1546C /* SearchHistoryMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryMediator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				D7C9ABCD201F3B4500E1546C /* MediatorTests.swift */,
+				D7C9ABD8201F3BD300E1546C /* SearchHistoryMediator.swift */,
 				D7C9ABCF201F3B4500E1546C /* Info.plist */,
 			);
 			path = MediatorTests;
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7C9ABBB201F3B4400E1546C /* ViewController.swift in Sources */,
+				D7C9ABD9201F3BD300E1546C /* SearchHistoryMediator.swift in Sources */,
 				D7C9ABB9201F3B4400E1546C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
