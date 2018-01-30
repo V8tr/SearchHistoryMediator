@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		D7C9ABB9201F3B4400E1546C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9ABB8201F3B4400E1546C /* AppDelegate.swift */; };
-		D7C9ABBB201F3B4400E1546C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9ABBA201F3B4400E1546C /* ViewController.swift */; };
-		D7C9ABBE201F3B4400E1546C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7C9ABBC201F3B4400E1546C /* Main.storyboard */; };
+		D7C9ABBB201F3B4400E1546C /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9ABBA201F3B4400E1546C /* SampleViewController.swift */; };
 		D7C9ABC0201F3B4400E1546C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7C9ABBF201F3B4400E1546C /* Assets.xcassets */; };
 		D7C9ABC3201F3B4400E1546C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7C9ABC1201F3B4400E1546C /* LaunchScreen.storyboard */; };
-		D7C9ABCE201F3B4500E1546C /* MediatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9ABCD201F3B4500E1546C /* MediatorTests.swift */; };
+		D7C9ABCE201F3B4500E1546C /* SearchHistoryMediatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9ABCD201F3B4500E1546C /* SearchHistoryMediatorTests.swift */; };
 		D7C9ABD9201F3BD300E1546C /* SearchHistoryMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9ABD8201F3BD300E1546C /* SearchHistoryMediator.swift */; };
+		D7D59E4220206C5F00F4AA96 /* SeachHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D59E4120206C5F00F4AA96 /* SeachHistoryView.swift */; };
+		D7D59E4420206CDA00F4AA96 /* SearchHistoryViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D59E4320206CDA00F4AA96 /* SearchHistoryViewTests.swift */; };
+		D7D59E462020739300F4AA96 /* InMemoryHistoryRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D59E452020739300F4AA96 /* InMemoryHistoryRepositoryTests.swift */; };
+		D7D59E48202073F500F4AA96 /* InMemoryHistoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D59E47202073F500F4AA96 /* InMemoryHistoryRepository.swift */; };
+		D7D59E4A2020768800F4AA96 /* SampleViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D59E492020768800F4AA96 /* SampleViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +31,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D7C9ABB5201F3B4400E1546C /* Mediator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mediator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7C9ABB5201F3B4400E1546C /* SearchHistoryMediator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchHistoryMediator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7C9ABB8201F3B4400E1546C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D7C9ABBA201F3B4400E1546C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D7C9ABBD201F3B4400E1546C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7C9ABBA201F3B4400E1546C /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 		D7C9ABBF201F3B4400E1546C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7C9ABC2201F3B4400E1546C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7C9ABC4201F3B4400E1546C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7C9ABC9201F3B4500E1546C /* MediatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7C9ABCD201F3B4500E1546C /* MediatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatorTests.swift; sourceTree = "<group>"; };
+		D7C9ABC9201F3B4500E1546C /* SearchHistoryMediatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchHistoryMediatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7C9ABCD201F3B4500E1546C /* SearchHistoryMediatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryMediatorTests.swift; sourceTree = "<group>"; };
 		D7C9ABCF201F3B4500E1546C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7C9ABD8201F3BD300E1546C /* SearchHistoryMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryMediator.swift; sourceTree = "<group>"; };
+		D7D59E4120206C5F00F4AA96 /* SeachHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeachHistoryView.swift; sourceTree = "<group>"; };
+		D7D59E4320206CDA00F4AA96 /* SearchHistoryViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryViewTests.swift; sourceTree = "<group>"; };
+		D7D59E452020739300F4AA96 /* InMemoryHistoryRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryHistoryRepositoryTests.swift; sourceTree = "<group>"; };
+		D7D59E47202073F500F4AA96 /* InMemoryHistoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryHistoryRepository.swift; sourceTree = "<group>"; };
+		D7D59E492020768800F4AA96 /* SampleViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +66,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D75425762020B59E007E0811 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7C9ABBF201F3B4400E1546C /* Assets.xcassets */,
+				D7C9ABC1201F3B4400E1546C /* LaunchScreen.storyboard */,
+				D7C9ABC4201F3B4400E1546C /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D7C9ABAC201F3B4400E1546C = {
 			isa = PBXGroup;
 			children = (
-				D7C9ABB7201F3B4400E1546C /* Mediator */,
-				D7C9ABCC201F3B4500E1546C /* MediatorTests */,
+				D7C9ABB7201F3B4400E1546C /* SearchHistoryMediator */,
+				D7C9ABCC201F3B4500E1546C /* SearchHistoryMediatorTests */,
 				D7C9ABB6201F3B4400E1546C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,41 +88,43 @@
 		D7C9ABB6201F3B4400E1546C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D7C9ABB5201F3B4400E1546C /* Mediator.app */,
-				D7C9ABC9201F3B4500E1546C /* MediatorTests.xctest */,
+				D7C9ABB5201F3B4400E1546C /* SearchHistoryMediator.app */,
+				D7C9ABC9201F3B4500E1546C /* SearchHistoryMediatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D7C9ABB7201F3B4400E1546C /* Mediator */ = {
+		D7C9ABB7201F3B4400E1546C /* SearchHistoryMediator */ = {
 			isa = PBXGroup;
 			children = (
 				D7C9ABB8201F3B4400E1546C /* AppDelegate.swift */,
-				D7C9ABBA201F3B4400E1546C /* ViewController.swift */,
-				D7C9ABBC201F3B4400E1546C /* Main.storyboard */,
-				D7C9ABBF201F3B4400E1546C /* Assets.xcassets */,
-				D7C9ABC1201F3B4400E1546C /* LaunchScreen.storyboard */,
-				D7C9ABC4201F3B4400E1546C /* Info.plist */,
+				D7C9ABBA201F3B4400E1546C /* SampleViewController.swift */,
+				D7D59E4120206C5F00F4AA96 /* SeachHistoryView.swift */,
+				D7C9ABD8201F3BD300E1546C /* SearchHistoryMediator.swift */,
+				D7D59E47202073F500F4AA96 /* InMemoryHistoryRepository.swift */,
+				D75425762020B59E007E0811 /* Supporting Files */,
 			);
-			path = Mediator;
+			path = SearchHistoryMediator;
 			sourceTree = "<group>";
 		};
-		D7C9ABCC201F3B4500E1546C /* MediatorTests */ = {
+		D7C9ABCC201F3B4500E1546C /* SearchHistoryMediatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				D7C9ABCD201F3B4500E1546C /* MediatorTests.swift */,
-				D7C9ABD8201F3BD300E1546C /* SearchHistoryMediator.swift */,
+				D7C9ABCD201F3B4500E1546C /* SearchHistoryMediatorTests.swift */,
+				D7D59E4320206CDA00F4AA96 /* SearchHistoryViewTests.swift */,
+				D7D59E452020739300F4AA96 /* InMemoryHistoryRepositoryTests.swift */,
+				D7D59E492020768800F4AA96 /* SampleViewControllerTests.swift */,
 				D7C9ABCF201F3B4500E1546C /* Info.plist */,
 			);
-			path = MediatorTests;
+			path = SearchHistoryMediatorTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D7C9ABB4201F3B4400E1546C /* Mediator */ = {
+		D7C9ABB4201F3B4400E1546C /* SearchHistoryMediator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D7C9ABD2201F3B4500E1546C /* Build configuration list for PBXNativeTarget "Mediator" */;
+			buildConfigurationList = D7C9ABD2201F3B4500E1546C /* Build configuration list for PBXNativeTarget "SearchHistoryMediator" */;
 			buildPhases = (
 				D7C9ABB1201F3B4400E1546C /* Sources */,
 				D7C9ABB2201F3B4400E1546C /* Frameworks */,
@@ -114,14 +134,14 @@
 			);
 			dependencies = (
 			);
-			name = Mediator;
+			name = SearchHistoryMediator;
 			productName = Mediator;
-			productReference = D7C9ABB5201F3B4400E1546C /* Mediator.app */;
+			productReference = D7C9ABB5201F3B4400E1546C /* SearchHistoryMediator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D7C9ABC8201F3B4500E1546C /* MediatorTests */ = {
+		D7C9ABC8201F3B4500E1546C /* SearchHistoryMediatorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D7C9ABD5201F3B4500E1546C /* Build configuration list for PBXNativeTarget "MediatorTests" */;
+			buildConfigurationList = D7C9ABD5201F3B4500E1546C /* Build configuration list for PBXNativeTarget "SearchHistoryMediatorTests" */;
 			buildPhases = (
 				D7C9ABC5201F3B4500E1546C /* Sources */,
 				D7C9ABC6201F3B4500E1546C /* Frameworks */,
@@ -132,9 +152,9 @@
 			dependencies = (
 				D7C9ABCB201F3B4500E1546C /* PBXTargetDependency */,
 			);
-			name = MediatorTests;
+			name = SearchHistoryMediatorTests;
 			productName = MediatorTests;
-			productReference = D7C9ABC9201F3B4500E1546C /* MediatorTests.xctest */;
+			productReference = D7C9ABC9201F3B4500E1546C /* SearchHistoryMediatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -158,7 +178,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D7C9ABB0201F3B4400E1546C /* Build configuration list for PBXProject "Mediator" */;
+			buildConfigurationList = D7C9ABB0201F3B4400E1546C /* Build configuration list for PBXProject "SearchHistoryMediator" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -171,8 +191,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D7C9ABB4201F3B4400E1546C /* Mediator */,
-				D7C9ABC8201F3B4500E1546C /* MediatorTests */,
+				D7C9ABB4201F3B4400E1546C /* SearchHistoryMediator */,
+				D7C9ABC8201F3B4500E1546C /* SearchHistoryMediatorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -184,7 +204,6 @@
 			files = (
 				D7C9ABC3201F3B4400E1546C /* LaunchScreen.storyboard in Resources */,
 				D7C9ABC0201F3B4400E1546C /* Assets.xcassets in Resources */,
-				D7C9ABBE201F3B4400E1546C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,8 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7C9ABBB201F3B4400E1546C /* ViewController.swift in Sources */,
+				D7C9ABBB201F3B4400E1546C /* SampleViewController.swift in Sources */,
 				D7C9ABD9201F3BD300E1546C /* SearchHistoryMediator.swift in Sources */,
+				D7D59E48202073F500F4AA96 /* InMemoryHistoryRepository.swift in Sources */,
+				D7D59E4220206C5F00F4AA96 /* SeachHistoryView.swift in Sources */,
 				D7C9ABB9201F3B4400E1546C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,7 +233,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7C9ABCE201F3B4500E1546C /* MediatorTests.swift in Sources */,
+				D7D59E4420206CDA00F4AA96 /* SearchHistoryViewTests.swift in Sources */,
+				D7C9ABCE201F3B4500E1546C /* SearchHistoryMediatorTests.swift in Sources */,
+				D7D59E4A2020768800F4AA96 /* SampleViewControllerTests.swift in Sources */,
+				D7D59E462020739300F4AA96 /* InMemoryHistoryRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,20 +245,12 @@
 /* Begin PBXTargetDependency section */
 		D7C9ABCB201F3B4500E1546C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D7C9ABB4201F3B4400E1546C /* Mediator */;
+			target = D7C9ABB4201F3B4400E1546C /* SearchHistoryMediator */;
 			targetProxy = D7C9ABCA201F3B4500E1546C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D7C9ABBC201F3B4400E1546C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D7C9ABBD201F3B4400E1546C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D7C9ABC1201F3B4400E1546C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -358,7 +374,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Mediator/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SearchHistoryMediator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = orgid.Mediator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -372,7 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Mediator/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SearchHistoryMediator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = orgid.Mediator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -387,13 +403,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MediatorTests/Info.plist;
+				INFOPLIST_FILE = SearchHistoryMediatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = orgid.MediatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mediator.app/Mediator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SearchHistoryMediator.app/SearchHistoryMediator";
 			};
 			name = Debug;
 		};
@@ -403,20 +419,20 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MediatorTests/Info.plist;
+				INFOPLIST_FILE = SearchHistoryMediatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = orgid.MediatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mediator.app/Mediator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SearchHistoryMediator.app/SearchHistoryMediator";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D7C9ABB0201F3B4400E1546C /* Build configuration list for PBXProject "Mediator" */ = {
+		D7C9ABB0201F3B4400E1546C /* Build configuration list for PBXProject "SearchHistoryMediator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7C9ABD0201F3B4500E1546C /* Debug */,
@@ -425,7 +441,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7C9ABD2201F3B4500E1546C /* Build configuration list for PBXNativeTarget "Mediator" */ = {
+		D7C9ABD2201F3B4500E1546C /* Build configuration list for PBXNativeTarget "SearchHistoryMediator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7C9ABD3201F3B4500E1546C /* Debug */,
@@ -434,7 +450,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7C9ABD5201F3B4500E1546C /* Build configuration list for PBXNativeTarget "MediatorTests" */ = {
+		D7C9ABD5201F3B4500E1546C /* Build configuration list for PBXNativeTarget "SearchHistoryMediatorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7C9ABD6201F3B4500E1546C /* Debug */,

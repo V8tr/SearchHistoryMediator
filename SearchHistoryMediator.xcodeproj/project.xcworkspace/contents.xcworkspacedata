@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Mediator.xcodeproj">
+      location = "self:/Users/vadymb/Projects/Mediator/SearchHistoryMediator.xcodeproj">
    </FileRef>
 </Workspace>

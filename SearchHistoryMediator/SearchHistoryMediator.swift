@@ -2,7 +2,7 @@
 //  SearchHistoryMediator.swift
 //  Mediator
 //
-//  Created by Vadym Bulavin on 1/29/18.
+//  Created by Vadim Bulavin on 1/29/18.
 //  Copyright © 2018 Vadim Bulavin. All rights reserved.
 //
 
@@ -42,10 +42,6 @@ class SearchHistoryMediator: NSObject {
 
 extension SearchHistoryMediator: UISearchBarDelegate {
 
-	func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
-		return true
-	}
-
 	func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
 		historyView.isHidden = false
 	}
@@ -58,38 +54,14 @@ extension SearchHistoryMediator: UISearchBarDelegate {
 		historyView.isHidden = true
         if let text = searchBar.text, !text.isEmpty {
             historyRepository.addSearchTerm(text)
+			historyView.setHistory(historyRepository.history)
+			searchBar.text = nil
         }
+		searchBar.resignFirstResponder()
 	}
 
 	func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
 		historyView.isHidden = true
+		searchBar.resignFirstResponder()
 	}
-
-//	func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-//
-//	}
-//
-//	func searchBar(_ searchBar: UISearchBar, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-//		return true
-//	}
 }
-
-//@available(iOS 2.0, *)
-//optional public func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool // return NO to not resign first responder
-//
-//@available(iOS 2.0, *)
-//optional public func searchBarTextDidEndEditing(_ searchBar: UISearchBar) // called when text ends editing
-//
-//@available(iOS 2.0, *)
-//optional public func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) // called when text changes (including clear)
-//
-//@available(iOS 3.0, *)
-//optional public func searchBar(_ searchBar: UISearchBar, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool // called before text changes
-//
-////
-//@available(iOS 2.0, *)
-//optional public func searchBarBookmarkButtonClicked(_ searchBar: UISearchBar) // called when bookmark button pressed
-//
-//func searchBarResultsListButtonClicked(_ searchBar: UISearchBar)
-//
-//func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int)
