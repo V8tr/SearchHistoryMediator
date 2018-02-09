@@ -9,59 +9,59 @@
 import UIKit
 
 protocol HistoryRepository {
-	var history: [String] { get }
+    var history: [String] { get }
     func addSearchTerm(_ term: String)
 }
 
-protocol HistoryView: class {
-	var isHidden: Bool { get set }
-	func setHistory(_ history: [String])
+protocol HistoryView {
+    var isHidden: Bool { get set }
+    func setHistory(_ history: [String])
 }
 
 class SearchHistoryMediator: NSObject {
-	private let searchBar: UISearchBar
-	private let historyView: HistoryView
-	private var observasion: NSKeyValueObservation?
-	private let historyRepository: HistoryRepository
+    private let searchBar: UISearchBar
+    private var historyView: HistoryView
+    private var observasion: NSKeyValueObservation?
+    private let historyRepository: HistoryRepository
 
-	init(searchBar: UISearchBar, historyView: HistoryView, historyRepository: HistoryRepository) {
-		self.searchBar = searchBar
-		self.historyView = historyView
-		self.historyRepository = historyRepository
-		super.init()
+    init(searchBar: UISearchBar, historyView: HistoryView, historyRepository: HistoryRepository) {
+        self.searchBar = searchBar
+        self.historyView = historyView
+        self.historyRepository = historyRepository
+        super.init()
 
-		historyView.isHidden = true
-		historyView.setHistory(historyRepository.history)
+        self.historyView.isHidden = true
+        self.historyView.setHistory(historyRepository.history)
 
-		searchBar.delegate = self
-		observasion = searchBar.observe(\.text) { [weak self] (searchBar, _) in
-			self?.historyView.isHidden = searchBar.text?.isEmpty ?? false
-		}
-	}
+        searchBar.delegate = self
+        observasion = searchBar.observe(\.text) { [weak self] (searchBar, _) in
+            self?.historyView.isHidden = searchBar.text?.isEmpty ?? false
+        }
+    }
 }
 
 extension SearchHistoryMediator: UISearchBarDelegate {
 
-	func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-		historyView.isHidden = false
-	}
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        historyView.isHidden = false
+    }
 
-	func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-		historyView.isHidden = true
-	}
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        historyView.isHidden = true
+    }
 
-	func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-		historyView.isHidden = true
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        historyView.isHidden = true
         if let text = searchBar.text, !text.isEmpty {
             historyRepository.addSearchTerm(text)
-			historyView.setHistory(historyRepository.history)
-			searchBar.text = nil
+            historyView.setHistory(historyRepository.history)
+            searchBar.text = nil
         }
-		searchBar.resignFirstResponder()
-	}
+        searchBar.resignFirstResponder()
+    }
 
-	func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-		historyView.isHidden = true
-		searchBar.resignFirstResponder()
-	}
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        historyView.isHidden = true
+        searchBar.resignFirstResponder()
+    }
 }

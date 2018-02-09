@@ -9,10 +9,10 @@
 import Foundation
 
 class InMemoryHistoryRepository: HistoryRepository {
-	private(set) var history: [String] = []
+    private(set) var history: [String] = []
 
-	func addSearchTerm(_ term: String) {
-		guard !history.contains(term) else { return }
-		history.append(term)
-	}
+    func addSearchTerm(_ term: String) {
+        guard !history.contains(term) else { return }
+        history.append(term)
+    }
 }
